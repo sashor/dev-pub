@@ -41,15 +41,6 @@ body {
   background: transparent;
 }
 
-/* Hide all other widgets */
-.widget-phasedetail__info__cycling-road,
-.widget-phasedetail__info__wrapper,
-.widget-phasedetail__info__completed-info-wrapper__completed-info.widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box,
-.widget-phasedetail__nav,
-.widget-phasedetail__results-table {
-  display: none;
-}
-
 /* Remove padding of the container */
 .widget-phasedetail__info {
   padding: 0;
