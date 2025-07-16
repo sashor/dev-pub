@@ -114,6 +114,6 @@ body {
   display: none;
 }
 
-.widget-phasedetail__info__completed-info-wrapper__completed-info widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box color__background {
+.widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box {
   margin-bottom: 20px;
 }
