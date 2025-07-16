@@ -1,0 +1,124 @@
+/**
+ *
+ *
+ *
+ * OVERRIDES
+ *
+ *
+ *
+ */
+
+:root {
+  --bg: transparent;
+  --fg: #000;
+  --semantic-border-base-adaptive-default-fill: #e0e0e0;
+  --semantic-background-brand-adaptive-soft-fill: #fff;
+  --font-size: 14px;
+  --scale-3: 4px;
+  --scale-4: 8px;
+  --scale-7: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-weight-medium: 600;
+  --font-weight-regular: 400;
+}
+
+body {
+  /* Default background color -- Should be the same as .color__background */
+  /* Current color: White */
+  background-color: var(--bg);
+
+  /* Default text color -- Should be the same as .color__text */
+  /* Current color: Black */
+  color: var(--fg);
+  /* Default fonts */
+  font-family: var(--font-family);
+}
+
+/* Remove background color of the container, so we can render our own color beneith it in react (Panel) */
+.color__background--secondary--dark,
+.color__background {
+  background: transparent;
+}
+
+/* Hide all other widgets */
+.widget-phasedetail__info__cycling-road,
+.widget-phasedetail__info__wrapper,
+.widget-phasedetail__info__completed-info-wrapper__completed-info.widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box,
+.widget-phasedetail__nav,
+.widget-phasedetail__results-table {
+  display: none;
+}
+
+/* Remove padding of the container */
+.widget-phasedetail__info {
+  padding: 0;
+}
+
+/* Remove margin of the container (was used for placement between other internal widgets */
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box {
+  margin-top: 0;
+}
+
+/* Remove shadow and padding of the container */
+.widget-phasedetail__info__completed-info-wrapper__completed-info {
+  background-color: var(--semantic-background-brand-adaptive-soft-fill);
+  border-radius: var(--scale-3);
+  padding: 0;
+  border: 1px solid var(--semantic-border-base-adaptive-default-fill);
+}
+
+/* Hide title: Leiders (we can't modify the font with variables) */
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__title {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--scale-4);
+  padding: 0;
+  min-height: 40px;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid var(--semantic-border-base-adaptive-default-fill);
+  padding: 0 var(--scale-7);
+}
+
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__result-wrapper {
+  padding: 0;
+}
+
+/* Remove top spacing of jersye, and use */
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__result-wrapper__result {
+  margin-top: 0;
+}
+
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__result-wrapper__result__person-name {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family);
+}
+
+.widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__result-wrapper__result {
+  margin-top: 0;
+  padding: var(--scale-4) var(--scale-7);
+}
+
+@media screen and (min-width: 700px) {
+  .widget-phasedetail__info__completed-info-wrapper__completed-info--leaders-box__result-wrapper {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .widget-phasedetail__info__completed-info-wrapper--winner-and-leaders {
+    margin-top: 0;
+  }
+}
+
+.widget-phasedetail__no-additional-information-available-yet {
+  padding: var(--scale-4) var(--scale-7);
+  border: 1px solid var(--semantic-border-base-adaptive-default-fill);
+  border-radius: var(--scale-3);
+}
+
+.widget-phasedetail__no-additional-information-available-yet {
+  display: none;
+}
