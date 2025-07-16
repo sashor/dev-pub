@@ -113,3 +113,7 @@ body {
 .widget-phasedetail__no-additional-information-available-yet {
   display: none;
 }
+
+.widget-phasedetail__info__completed-info-wrapper__completed-info widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box color__background {
+  margin-bottom: 20px;
+}
