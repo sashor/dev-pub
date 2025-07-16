@@ -115,7 +115,8 @@ body {
 }
 
 .widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  padding: 13px 15px 15px;
 }
 
 .widget-phasedetail__info__cycling-road__cycling-profile__svg__intermediate__text {
@@ -124,4 +125,16 @@ body {
 
 .widget-phasedetail__info__cycling-road__cycling-profile__result--info-block-only--with-results {
   background: white;
+} 
+
+.widget-phasedetail__info__cycling-road__cycling-profile__result__header__intermediate-type__content { 
+  color: white; 
 }
+
+@media screen and (min-width: 700px) {
+  .widget-phasedetail__info__completed-info-wrapper__completed-info--winner-box {
+    margin-bottom: 20px; 
+    padding: 21px 25px 25px;
+  }
+}
+  
