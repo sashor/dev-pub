@@ -118,7 +118,7 @@ body {
   margin-bottom: 20px;
 }
 
-.widget-phasedetail__info__cycling-road__cycling-profile__svg__intermediate color__fill--cta {
+.widget-phasedetail__info__cycling-road__cycling-profile__svg__intermediate.color__fill--cta {
   fill: white;
 }
 
